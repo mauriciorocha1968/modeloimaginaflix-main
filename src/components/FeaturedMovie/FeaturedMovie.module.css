@@ -1,0 +1,104 @@
+.featured{
+    height: 100vh;
+}
+
+.featuredvertical{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #111 10%, transparent);
+}
+
+.featuredhorizontal{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, #111 30%, transparent 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-bottom: 150px;
+    padding-top : 70px;
+}
+
+.featuredname{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.featuredinfo{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.featuredpoints{
+    color: #46d369
+}
+
+.featureddescription{
+    margin-top:15px;
+    font-size: 20px;
+    color: #999;
+    max-width: 40%;
+}
+
+.featuredbuttons{
+    margin-top:15px;
+}
+
+.featuredmylistbutton,
+.featuredwatchbutton{
+    display: inline-block;
+    font-size:20px;
+    font-weight: bold;
+    padding:  12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    opacity: 1;
+    transition :all ease 0.2s;
+}
+
+.featuredmylistbutton:hover,
+.featuredwatchbutton:hover{
+    opacity: 0.7;
+}
+.featuredwatchbutton{
+    background-color: #fff;
+    color: #000;
+}
+
+.featuredmylistbutton{
+    background-color: #333;
+    color: #fff;
+}
+
+.featuredgenres{
+    margin-top: 15px;
+    font-size: 18px;
+    color: #999;
+}
+
+@media (max-width:760px){
+    .featured{
+        height: 90vh;
+    }
+    .featuredname{
+        font-size:40px;
+    }
+    .featuredinfo{
+        font-size:16px;        
+    }
+    .featureddescription{
+        font-size:14px; 
+        max-width: 100%;
+        margin-right: 30px;    
+    }
+    .featuredmylistbutton,
+    .featuredwatchbutton{
+        font-size:10px; 
+    }
+    .featuredgenres{
+        font-size:14px;        
+    }
+}
